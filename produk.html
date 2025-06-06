@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Produk - Davy Fragrance Store</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            background-color: #F5F5DC;
+        }
+
+        .tab {
+            display: none;
+        }
+
+        .kategori-label {
+            display: inline-block;
+            background-color: #5D4037;
+            color: white;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .kategori-label:hover {
+            background-color: #8B4513;
+        }
+
+        .produk-container {
+            display: none;
+            margin-top: 20px;
+        }
+
+        input[type="radio"]:checked + .kategori-label + .produk-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .produk-box {
+            background-color: white;
+            padding: 10px;
+            border: 1px solid #ccc;
+            text-align: center;
+            width: 180px;
+            border-radius: 8px;
+        }
+
+        .produk-box img {
+            width: 150px;
+        }
+
+        button.beli-btn {
+            margin-top: 5px;
+            background-color: #5D4037;
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 4px;
+        }
+
+        .menu {
+            background-color: #FFF8DC;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .menu button {
+            background-color: #5D4037;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<table width="100%" border="1" cellspacing="0" cellpadding="10">
+<tr>
+    <td colspan="3" align="center" bgcolor="#5D4037" style="color:white;">
+        <h1>Daftar Produk Parfum</h1>
+    </td>
+</tr>
+
+<tr>
+    <td colspan="3" class="menu">
+        <a href="index.html"><button>Beranda</button></a>
+        <a href="produk.html"><button>Produk</button></a>
+        <a href="transaksi.html"><button>Pesan Sekarang</button></a>
+        <a href="kontak.html"><button>Kontak Kami</button></a>
+    </td>
+</tr>
+
+<tr>
+    <td colspan="3" align="center" bgcolor="#FFFFFF">
+
+        <input type="radio" name="kategori" id="fresh" class="tab" checked>
+        <label class="kategori-label" for="fresh">Parfum Fresh</label>
+        <div class="produk-container">
+            <div class="produk-box">
+                <img src="freshbreeze.jpg" alt="Parfum Fresh 1">
+                <b>Fresh Breeze</b><br>Rp70.000<br>
+                <a href="transaksi.html"><button class="beli-btn">Beli</button></a>
+            </div>
+            <div class="produk-box">
+                <img src="oceanmist.jpeg" alt="Parfum Fresh 2">
+                <b>Ocean Mist</b><br>Rp80.000<br>
+                <a href="transaksi.html"><button class="beli-btn">Beli</button></a>
+            </div>
+        </div>
+
+        <input type="radio" name="kategori" id="sweet" class="tab">
+        <label class="kategori-label" for="sweet">Parfum Sweet</label>
+        <div class="produk-container">
+            <div class="produk-box">
+                <img src="royalnight.jpg" alt="Parfum Sweet 1">
+                <b>Royal Night</b><br>Rp85.000<br>
+                <a href="transaksi.html"><button class="beli-btn">Beli</button></a>
+            </div>
+            <div class="produk-box">
+                <img src="velvetrose.png" alt="Parfum Sweet 2">
+                <b>Velvet Rose</b><br>Rp90.000<br>
+                <a href="transaksi.html"><button class="beli-btn">Beli</button></a>
+            </div>
+        </div>
+
+        <input type="radio" name="kategori" id="versatile" class="tab">
+        <label class="kategori-label" for="versatile">Parfum Versatile</label>
+        <div class="produk-container">
+            <div class="produk-box">
+                <img src="classicmusk.webp" alt="Versatile 1">
+                <b>Classic Musk</b><br>Rp95.000<br>
+                <a href="transaksi.html"><button class="beli-btn">Beli</button></a>
+            </div>
+            <div class="produk-box">
+                <img src="softspice.webp" alt="Versatile 2">
+                <b>Soft Spice</b><br>Rp100.000<br>
+                <a href="transaksi.html"><button class="beli-btn">Beli</button></a>
+            </div>
+        </div>
+
+    </td>
+</tr>
+
+<tr>
+    <td colspan="3" align="center" bgcolor="#5D4037" style="color:white;">
+        &copy; 2025 Davy Fragrance Store
+    </td>
+</tr>
+</table>
+
+</body>
+</html>

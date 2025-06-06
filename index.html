@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Davy Fragrance Store</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #F5F5DC;
+        }
+
+        h1,h2,h3,h4 {
+            margin: 10px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 15px;
+            vertical-align: top;
+        }
+
+        .header {
+            background-color: #5D4037;
+            color: white;
+            text-align: center;
+        }
+
+        .menu {
+            background-color: #FFF8DC;
+            text-align: center;
+        }
+
+        .menu button {
+            background-color: #5D4037;
+            color: white;
+            padding: 10px 15px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .menu button:hover {
+            background-color: #8D6E63;
+        }
+
+        .marquee {
+            background-color: #FFF8DC;
+            color: #8B4513;
+            font-weight: bold;
+            padding: 10px 0;
+        }
+
+        .kategori ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        .promo img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .action-btn {
+            background-color: #5D4037;
+            color: white;
+            padding: 10px 20px;
+            margin: 10px 5px 0 0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .action-btn.alt {
+            background-color: #8B4513;
+        }
+
+        .footer {
+            background-color: #5D4037;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        @media screen and (max-width: 768px) {
+            td {
+                display: block;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <table border="1" cellspacing="0" cellpadding="10">
+        <tr>
+            <td colspan="3" class="header">
+                <h1>Welcome to Davy Fragrance Store</h1>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="3" class="menu">
+                <a href="index.html"><button>Beranda</button></a>
+                <a href="produk.html"><button>Produk</button></a>
+                <a href="transaksi.html"><button>Pesan Sekarang</button></a>
+                <a href="kontak.html"><button>Kontak Kami</button></a>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="3" class="marquee">
+                <marquee behavior="scroll" direction="left">
+                    🎉 Diskon spesial bulan ini! Parfum mulai dari Rp70.000! Bebas ongkir untuk pembelian di atas
+                    Rp150.000!
+                </marquee>
+            </td>
+        </tr>
+
+        <tr>
+            <td width="20%" bgcolor="#F5F5DC" class="kategori">
+                <h4>Kategori</h4>
+                <ul>
+                    <li>Parfum Fresh</li>
+                    <li>Parfum Sweet</li>
+                    <li>Parfum Versatile</li>
+                </ul>
+
+                <hr>
+
+                <h4>Jam Operasional</h4>
+                <p>
+                    Senin – Jumat: 08.00 – 20.00<br>
+                    Sabtu: 09.00 – 17.00<br>
+                    Minggu & Hari Libur: Tutup
+                </p>
+
+                <hr>
+
+                <h4>Info Pengiriman</h4>
+                <p>
+                    • Pengiriman seluruh Indonesia<br>
+                    • Estimasi 1–3 hari kerja<br>
+                    • Gratis ongkir minimal pembelian Rp150.000
+                </p>
+
+                <hr>
+
+                <h4>Kontak Cepat</h4>
+                <p>
+                    📞 WhatsApp: 0821-1820-9415<br>
+                    📧 Email: davy.10524068@mahasiswa.unikom.ac.id
+                </p>
+            </td>
+
+
+            <td width="60%" bgcolor="#FFFFFF">
+                <h2>Davy Fragrance Store</h2>
+                <p>Temukan wewangian terbaik yang mencerminkan kepribadian Anda. Kami menawarkan parfum pilihan dengan
+                    aroma elegan, tahan lama, dan harga terjangkau untuk semua kalangan.</p>
+
+                <h3>Kenapa memilih kami?</h3>
+                <ul>
+                    <li><b>Aroma Premium:</b> Dibuat dari bahan berkualitas tinggi</li>
+                    <li><b>Harga Terjangkau:</b> Mulai dari Rp70.000</li>
+                    <li><b>Pelayanan Cepat:</b> Siap kirim ke seluruh Indonesia</li>
+                </ul>
+
+                <h3>Apa kata pelanggan?</h3>
+                <p><i>"Aromanya tahan lama dan elegan. Cocok untuk hadiah!"</i> – Rina, Jakarta</p>
+                <p><i>"Pelayanan cepat, parfum sesuai dengan deskripsi."</i> – Budi, Bandung</p>
+
+                <a href="produk.html"><button class="action-btn">Lihat Produk</button></a>
+                <a href="transaksi.html"><button class="action-btn alt">Pesan Sekarang</button></a>
+            </td>
+
+           <td width="20%" bgcolor="#F5F5DC" class="promo">
+    <h4>Promo Minggu Ini</h4>
+    <p><b>Beli 2 gratis 1</b> untuk parfum sweet.</p>
+    <p style="color:red;"><b>Stok terbatas!</b></p>
+
+    <hr>
+
+    <h4>Tips Wewangian</h4>
+    <p>
+        Semprot parfum di titik nadi (leher, pergelangan tangan) agar tahan lama.
+    </p>
+    <p>
+        Jangan digosok setelah disemprot, cukup diamkan agar aroma tidak rusak.
+    </p>
+
+    <hr>
+
+    <h4>Newsletter</h4>
+    <p>Ingin update parfum terbaru?</p>
+    <form>
+        <input type="email" name="email" placeholder="Email Anda" style="width:90%; padding:5px; margin-bottom:5px; border:1px solid #ccc; border-radius:4px;">
+        <button type="submit" style="background-color:#5D4037; color:white; padding:5px 10px; border:none; border-radius:4px; cursor:pointer;">Langganan</button>
+    </form>
+</td>
+
+        </tr>
+
+        <tr>
+            <td colspan="3" class="footer">
+                &copy; 2025 Davy Fragrance Store
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
